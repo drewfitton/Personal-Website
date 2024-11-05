@@ -21,6 +21,13 @@ const About = () => {
   const [isLangOpen, setIsLangOpen] = useState(true);
   const [isTechOpen, setIsTechOpen] = useState(true);
   const [isExpOpen, setIsExpOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+      const handleResize = () => setIsMobile(window.innerWidth < 768);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const toggleBio = () => {
     setIsBioOpen(!isBioOpen);
@@ -112,28 +119,28 @@ const About = () => {
                   <p class='degree'>Manhattan Associates</p>
                   <p>Software Implementation Consultant</p>
                 </div>
-                <p>June 2024 - Present</p>
+                <p>{isMobile ? 'Present' : 'June 2024 - Present'}</p>
               </div>
               <div class="split-list">
                 <div class='edu-entry'>
                   <p class='degree'>Nike</p>
                   <p>Software Engineer Intern</p>
                 </div>
-                <p>June 2023 - August 2023</p>
+                <p>{isMobile ? '2023' : 'June 2023 - August 2023'}</p>
               </div>
               <div class="split-list">
                 <div class='edu-entry'>
                   <p class='degree'>Georgia Tech Research Institute</p>
                   <p>Secure Computing Engineer Co-Op</p>
                 </div>
-                <p>May 2022 - August 2022</p>
+                <p>{isMobile ? '2022' : 'May 2022 - August 2022'}</p>
               </div>
               <div class="split-list">
                 <div class='edu-entry'>
                   <p class='degree'>Investment Metrics (Confluence)</p>
                   <p>Market Insights Intern</p>
                 </div>
-                <p>June 2020 - August 2020</p>
+                <p>{isMobile ? '2020' : 'June 2020 - August 2020'}</p>
               </div>
             </div>
           )}
