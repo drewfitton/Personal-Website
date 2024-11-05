@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar'
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
-import Connect from './Connect';
 
 function App() {
   return (

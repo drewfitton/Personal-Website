@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import bobbydodd from './assets/bobbydodd.gif';
-import calculator from './assets/calculatorApp.png';
 import p4m from './assets/peace4moms.png';
 import './projects.css';
 import premPredictor from './assets/premier_predictor.png';
