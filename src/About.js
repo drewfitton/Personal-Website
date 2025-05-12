@@ -160,7 +160,7 @@ const About = () => {
                 <div class='edu-entry'>
                   <p class='degree'>MS Computer Science at Georgia Tech</p>
                   <p>Human Computer Interation</p>
-                  
+                  <p>GPA: 4.0</p>
                 </div>
                 <p>2025</p>
               </div>
