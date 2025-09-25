@@ -117,7 +117,7 @@ const About = () => {
               <div class="split-list">
                 <div class='edu-entry'>
                   <p class='degree'>S&P Global</p>
-                  <p>Software Developer</p>
+                  <p>Software Developer Intern</p>
                 </div>
                 <p>{isMobile ? '2025' : 'June 2025 - September 2025'}</p>
               </div>
