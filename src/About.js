@@ -116,10 +116,17 @@ const About = () => {
             <div class="list-div">
               <div class="split-list">
                 <div class='edu-entry'>
+                  <p class='degree'>S&P Global</p>
+                  <p>Software Developer</p>
+                </div>
+                <p>{isMobile ? '2025' : 'June 2025 - September 2025'}</p>
+              </div>
+              <div class="split-list">
+                <div class='edu-entry'>
                   <p class='degree'>Manhattan Associates</p>
                   <p>Software Implementation Consultant</p>
                 </div>
-                <p>{isMobile ? 'Present' : 'June 2024 - Present'}</p>
+                <p>{isMobile ? '2024 - 2025' : 'June 2024 - June 2025'}</p>
               </div>
               <div class="split-list">
                 <div class='edu-entry'>
@@ -159,10 +166,10 @@ const About = () => {
               <div class="split-list">
                 <div class='edu-entry'>
                   <p class='degree'>MS Computer Science at Georgia Tech</p>
-                  <p>Human Computer Interation</p>
+                  <p>Artificial Intelligence</p>
                   <p>GPA: 4.0</p>
                 </div>
-                <p>2025</p>
+                <p>2025 - 2026</p>
               </div>
               <div class="split-list">
                 <div class='edu-entry'>
